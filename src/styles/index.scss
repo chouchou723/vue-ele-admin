@@ -199,3 +199,18 @@ code {
 .multiselect--active {
   z-index: 1000 !important;
 }
+/* 解决  表单placeholder 字体颜色  */
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder{
+	color: #cec6c6;
+}
+input::-moz-placeholder,
+textarea::-moz-placeholder{ 
+	color: #cec6c6;
+}
+
+/* 解决 火狐浏览器   加了requied属性  会给input框 加上红色边框   */
+input[required]:invalid, 
+input:focus:invalid, 
+textarea[required]:invalid, 
+textarea:focus:invalid{box-shadow: none;}
